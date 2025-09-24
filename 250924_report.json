@@ -1,0 +1,26 @@
+[
+  {
+    "log_id": "web-server-1",
+    "file_path": "test_logs/access.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès."
+  },
+  {
+    "log_id": "app-backend-2",
+    "file_path": "test_logs/errors.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès."
+  },
+  {
+    "log_id": "empty-log",
+    "file_path": "test_logs/empty.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès."
+  },
+  {
+    "log_id": "corrupted-log",
+    "file_path": "test_logs/corrupted.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès."
+  }
+]
