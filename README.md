@@ -25,12 +25,28 @@ loganalyzer est un outil en ligne de commande écrit en Go qui analyse en parall
 - Go \>= 1.21 (développé avec Go 1.24).
 
 ## Installation
+
+### Mode développement (rapide)
+Exécuter directement le projet avec Go :
 ```bash
-# Récupérer les dépendances et compiler
-go mod tidy
-go build ./...
+go run . analyze -c config.json
 ```
 
+### Compilation d’un binaire local
+Compiler le projet en binaire exécutable nommé `loganizer` :
+```bash
+go build -o loganizer .
+./loganizer analyze -c config.json -o rapports/report.json --status OK
+```
+
+### Installation globale (optionnel)
+Installer dans `$GOPATH/bin` ou `$HOME/go/bin` pour l’utiliser partout :
+```bash
+go install .
+loganizer analyze -c config.json
+```
+
+---
 ## Configuration d'entrée
 Le fichier JSON (par défaut `config.json`) contient un tableau d'objets :
 
